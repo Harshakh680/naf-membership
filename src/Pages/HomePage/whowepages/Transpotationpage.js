@@ -239,7 +239,7 @@ const Transpotationpage = () => {
           }}>
 
             <Typography className="bodyRegularText3" sx={{ color: '#c2c2c4' }}>
-              {t('transportation.')}
+              {t('seniorHomes.hero')}
             </Typography>
 
             <Typography className="headings-h3" sx={{ color: '#fcfcfc', mt: 1 }}>
