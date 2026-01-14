@@ -153,7 +153,7 @@ const ClinicsPage = () => {
       </Box>
 
       {/* CONTENT SECTION */}
-      <Box sx={{  mt: 5,  px: { xs: 2, sm: 6 }, py: 6 }}>
+      <Box sx={{ mt: 5, px: { xs: 2, sm: 6 }, py: 6 }}>
         <Typography className="bodyRegularText3" sx={{ color: '#c2c2c4' }}>
           {t('clinics.content.paragraph1')}
         </Typography>
@@ -171,14 +171,19 @@ const ClinicsPage = () => {
         <Grid container rowSpacing={{ xs: 10, md: 10 }} columnSpacing={{ xs: 2, sm: 3, md: 3 }}>
           {features.map((key, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
-              <Box sx={{ height:'100%',backgroundColor: '#161616', border: '1px solid #393939', borderRadius: '24px', p: 2 }}>
+              <Box sx={{
+                height: '100%', backgroundColor: '#161616', border: '1px solid #393939', borderRadius: '24px', display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+               p: "32px",
+              }}>
                 <Box sx={{ mb: 6 }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="60" viewBox="0 0 50 60" fill="none">
-                    <path d="M4.72153 30.6795H1.15602C0.740282..." fill="#FA7854" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="12" fill="#FA7854" />
                   </svg>
                 </Box>
-                <Box>
-                  <Typography className="bodyRegularText3" sx={{ color: '#fcfcfc' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: 1.5 }}>
+                  <Typography className="bodyMediumText1" sx={{ color: '#fcfcfc' }}>
                     {t(`clinics.advantages.features.${key}.title`)}
                   </Typography>
                   <Typography className="bodyRegularText4" sx={{ color: '#c2c2c4', lineHeight: 1.6 }}>
@@ -224,7 +229,7 @@ const ClinicsPage = () => {
       </Box>
 
       {/* Contact / Enquiry Form */}
-      <Box sx={{  mt: { xs: 8, md: 25 }, mb: 8 }} id="contact">
+      <Box sx={{ mt: { xs: 8, md: 25 }, mb: 8 }} id="contact">
         <ProductEnquiryForm />
       </Box>
 

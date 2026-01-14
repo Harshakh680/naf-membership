@@ -138,7 +138,7 @@ function NafAi() {
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
-          mt: 10,
+          mt: { xs: 8, md: 35 },
           p: 4
         }}>
           <Typography sx={{ color: '#fcfcfc' }} className='headings-h3'>
@@ -157,7 +157,7 @@ function NafAi() {
           {{
             display: 'flex',
             flexDirection: 'column',
-            mt: 10,
+            mt: { xs: 8, md: 35 },
             p: 4,
 
           }}
@@ -202,11 +202,13 @@ function NafAi() {
                     backgroundColor: '#161616',
                     border: '1px solid #393939',
                     borderRadius: '24px',
-
-                    p: 2,
+                    p: "32px",
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
                   }}
                 >
-                  <Box sx={{ mb: 6, }}>
+                  <Box sx={{}}>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <circle cx="12" cy="12" r="12" fill="#FA7854" />
@@ -230,15 +232,15 @@ function NafAi() {
           </Grid>
 
           {/*Benifits*/}
-          <Box sx={{ mt: 12 }}>
+          <Box sx={{ mt: { xs: 8, md: 35 }, }}>
             <Typography sx={{ color: '#fcfcfc', mb: 4 }} className='headings-h3'>
               {t("nafAI.benefitsTitle")}
             </Typography>
           </Box>
 
           <Grid container
-            rowSpacing={{ xs: 6, sm: 6, md: 6 }}
-            columnSpacing={{ xs: 2, sm: 3, md: 3 }}
+            rowSpacing={{ xs: 6, sm: 8, md: 10 }}
+            columnSpacing={{ xs: 2, sm: 3, md: 2 }}
           >
             {[
               {
@@ -275,15 +277,18 @@ function NafAi() {
                     backgroundColor: '#161616',
                     border: '1px solid #393939',
                     borderRadius: '24px',
-
-                    p: 2,
+                    p: "32px",
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
                   }}
                 >
-                  <Box sx={{ mb: 6, }}>
+                  <Box sx={{}}>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <circle cx="12" cy="12" r="12" fill="#FA7854" />
                     </svg>
+
                   </Box>
 
                   <Box>
@@ -302,7 +307,7 @@ function NafAi() {
           </Grid>
 
           {/* Industry compliance*/}
-          <Box sx={{ display: 'flex', flexDirection: 'column', mt: 16 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', mt: { xs: 8, md: 35 }, }}>
             <Typography sx={{ color: '#fcfcfc' }} className='headings-h3'>
               {t("nafAI.industryComplianceTitle")}
             </Typography>
@@ -361,12 +366,12 @@ function NafAi() {
 
           {/*Form*/}
 
-          <Box id="contact" sx={{ mt: 16 }}>
+          <Box id="contact" sx={{ mt: { xs: 8, md: 35 }, }}>
             <SolutionProductForm />
           </Box>
 
           {/* FAQ Section */}
-          <Box sx={{ mt: { xs: 10, md: 12 }, py: { xs: 6, md: 8 }, width: '100%' }}>
+          <Box sx={{ mt: { xs: 10, md: 35 }, py: { xs: 6, md: 8 }, width: '100%' }}>
             <Box sx={{ mb: { xs: 5, md: 7 }, textAlign: 'center' }}>
               <Typography className="headings-h2" sx={{ color: '#fcfcfc' }}>
                 {t('products.gourmetMachine.faq.title')}

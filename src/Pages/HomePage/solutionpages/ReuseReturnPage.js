@@ -144,7 +144,7 @@ function ReuseRetunPage() {
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
-          mt: 10,
+         mt: { xs: 8, md: 35 },
           p: 4
         }}>
           <Typography sx={{ color: '#fcfcfc' }} className='headings-h3'>
@@ -163,7 +163,7 @@ function ReuseRetunPage() {
           {{
             display: 'flex',
             flexDirection: 'column',
-            mt: 10,
+           mt: { xs: 8, md: 35 },
             p: 4,
 
           }}
@@ -195,48 +195,51 @@ function ReuseRetunPage() {
 
             ].map((feature, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
-                <Box
-                  sx={{
-                    height: '100%',
-                    backgroundColor: '#161616',
-                    border: '1px solid #393939',
-                    borderRadius: '24px',
-
-                    p: 2,
-                  }}
-                >
-                  <Box sx={{ mb: 6, }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <circle cx="12" cy="12" r="12" fill="#FA7854" />
-                    </svg>
-
-                  </Box>
-
-                  <Box>
-
-
-                    <Typography
-                      className="bodyRegularText4"
-                      sx={{ color: '#c2c2c4', lineHeight: 1.6 }}
-                    >
-                      {feature.description}
-                    </Typography>
-                  </Box>
-                </Box>
+                 <Box
+                                  sx={{
+                                    height: '100%',
+                                    backgroundColor: '#161616',
+                                    border: '1px solid #393939',
+                                    borderRadius: '24px',
+                 p: "32px",
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'space-between',
+                                  }}
+                                >
+                                  <Box sx={{ }}>
+                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                      <circle cx="12" cy="12" r="12" fill="#FA7854" />
+                                    </svg>
+                
+                                  </Box>
+                
+                                  <Box>
+                
+                
+                                    <Typography
+                                      className="bodyRegularText4"
+                                      sx={{ color: '#c2c2c4', lineHeight: 1.6 }}
+                                    >
+                                      {feature.description}
+                                    </Typography>
+                                  </Box>
+                                </Box>
               </Grid>
             ))}
           </Grid>
 
           {/*Benifits*/}
-          <Box sx={{ mt: 12 }}>
+          <Box sx={{mt: { xs: 8, md: 35 },}}>
             <Typography sx={{ color: '#fcfcfc', mb: 4 }} className='headings-h3'>
               {t('reuseReturn.benefitsTitle')}
             </Typography>
           </Box>
 
           <Grid container
-            rowSpacing={{ xs: 6, sm: 6, md: 6 }}
-            columnSpacing={{ xs: 2, sm: 3, md: 3 }}
+            rowSpacing={{ xs: 6, sm: 8, md: 10 }}
+            columnSpacing={{ xs: 2, sm: 3, md: 2 }}
           >
             {[
               {
@@ -258,40 +261,42 @@ function ReuseRetunPage() {
             ].map((feature, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Box
-                  sx={{
-                    height: '100%',
-                    backgroundColor: '#161616',
-                    border: '1px solid #393939',
-                    borderRadius: '24px',
-
-                    p: 2,
-                  }}
-                >
-                  <Box sx={{ mb: 6, }}>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <circle cx="12" cy="12" r="12" fill="#FA7854" />
-                    </svg>
-
-                  </Box>
-
-                  <Box>
-
-
-                    <Typography
-                      className="bodyRegularText4"
-                      sx={{ color: '#c2c2c4', lineHeight: 1.6 }}
-                    >
-                      {feature.description}
-                    </Typography>
-                  </Box>
-                </Box>
+                                 sx={{
+                                   height: '100%',
+                                   backgroundColor: '#161616',
+                                   border: '1px solid #393939',
+                                   borderRadius: '24px',
+                p: "32px",
+                                   display: 'flex',
+                                   flexDirection: 'column',
+                                   justifyContent: 'space-between',
+                                 }}
+                               >
+                                 <Box sx={{ }}>
+               
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                     <circle cx="12" cy="12" r="12" fill="#FA7854" />
+                                   </svg>
+               
+                                 </Box>
+               
+                                 <Box>
+               
+               
+                                   <Typography
+                                     className="bodyRegularText4"
+                                     sx={{ color: '#c2c2c4', lineHeight: 1.6 }}
+                                   >
+                                     {feature.description}
+                                   </Typography>
+                                 </Box>
+                               </Box>
               </Grid>
             ))}
           </Grid>
 
           {/* Industry compliance*/}
-          <Box sx={{ display: 'flex', flexDirection: 'column', mt: 16 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', mt: { xs: 8, md: 35 },}}>
             <Typography sx={{ color: '#fcfcfc' }} className='headings-h3'>
               {t('reuseReturn.industryComplianceTitle')}
             </Typography>
@@ -352,13 +357,13 @@ function ReuseRetunPage() {
 
           {/*Form */}
 
-          <Box id="contact" sx={{ mt: 16 }}>
+          <Box id="contact" sx={{ mt: { xs: 8, md: 35 }, }}>
             <SolutionProductForm />
           </Box>
 
           {/* FAQ Section */}
 
-          <Box sx={{ mt: { xs: 10, md: 12 }, py: { xs: 6, md: 8 }, width: '100%' }}>
+          <Box sx={{ mt: { xs: 10, md: 35 }, py: { xs: 6, md: 8 }, width: '100%' }}>
             <Box sx={{ mb: { xs: 5, md: 7 }, textAlign: 'center' }}>
               <Typography className="headings-h2" sx={{ color: '#fcfcfc' }}>
                 {t('reuseReturn.faqTitle')}

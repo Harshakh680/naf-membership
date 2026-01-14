@@ -135,7 +135,7 @@ const cards = [
                     }}
                     >
                       <Box sx={{
-            
+             mt: { xs: 8, md: 25 },
                         width: "50%"
                       }}>
             
